@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    
+<h1 class="showHideName">Hema</h1>
+<h1 class="showHideItem">car</h1>
+<button onclick="hideName()">HideNAME</button>
+      <button onclick="showName()">Show Name </button>
+    <button onclick="showHideName()">Show/Hide</button>
+    <button onmouseover="showItem()" onmouseout="hideItem()">Show/Hide</button>
+    <hr>
+    <label> Price:</label>
+    <input type="number" id='price' onkeydown="getPrice()"
+    onkeyup="showPrice()">
+    <div id="priceValue"></div>
+    <button id="clickEvent">click</button>
+    <input type="text" id='nameValue'>
+    <input type="radio" >
+    <label for="">Agree for terms and condition</label>
+    <input type="checkbox" name="" id="agree">
+    <br>
+    <div>
+        <label for="">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="female">
+    </div>
+ <button id='checkAgree' > conditions agree</button>
+    <script src="events.js"></script>
+
+</body>
+</html>
+
+
+

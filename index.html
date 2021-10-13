@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("var's rock");
+        var name = "Alia";
+        console.log("Name "+ name)
+        var age= 28;
+        console.log("Age "+ age )
+        var isMarried =  false
+        console.log("Is married"+ isMarried)
+        var x;
+        console.log("x "+ x)
+        var  y= null;
+        console.log("y "+ y)
+        
+    </script>
+</head>
+<body>
+<script>
+    var person = {
+        firstName : "Hema",
+        lastName :  "Uppaluru",
+        age : 22,
+        color : "White",
+        fullName : function() {
+            return this.firstName + ' ' + this.lastName
+        }
+        }
+        console.log("First Name " + person.firstName)
+        console.log("Last Name " + person.lastName)
+        console.log("Age "+ person.age)
+        console.log("color "+ person.color)
+        var fullName = person.fullName()
+        
+        console.log("Full Name " +fullName);
+
+        console.log("==================");
+
+        console.log("Full Name " + person["firstName"]);
+        console.log("Last Name " +  person["lastName"]);
+        console.log("Age " + person["age"]);
+        console.log("Color "  +  person["color"]);
+        var fullName= person["fullName"]();
+        console.log("Full Name " +  fullName);
+
+        console.log("===================");
+         
+        var car = new Object()
+        car.name = "BMW"
+        car.color = "red"
+        car.price = 1600000.12
+        car.getDetails = function(){
+            return car.name + " " + car.color + " "+ car.price
+        }
+        console.log("Name " + car.name);
+        console.log("Color " + car.color);
+        console.log("price " + car.price);
+        console.log('Car Details' + car.getDetails());
+        console.log("===========");
+         var data = "12"
+         var number = 12
+         if(data === number){
+             console.log('Equal');
+         }
+    else {
+        console.log('Not Equal');
+         }
+
+    console.log("=========");
+     var age =12
+     age >= 18 ? console.log("Eligible for voting"): console.log("NOT eligible for voting");
+     console.log("=======");
+
+     var percentage =10
+     typeof percentage  !== 'number' || percentage <0 || percentage >100 ? console.log('Invalid') :
+      percentage>=70 ? console.log("Distiction") : percentage >=35 ? console.log("pass") : console.log("Fail"); 
+      console.log("=======");
+      var x =undefined
+      console.log('Type of X' + typeof x);
+      var y = null
+      console.log('Type of Y' + typeof y);
+      var isValid = false
+      console.log('Type of isValid' + typeof(isValid));
+      console.log("=======not check like this=======");
+      var data =null
+      if (typeof (data)!== null){
+          console.log('if part');
+      }else{
+          console.log('else');
+      }
+     
+</script>
+    
+</body>
+</html>

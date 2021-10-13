@@ -1,0 +1,14 @@
+
+ body
+ {
+   margin:0px; background-color:#27a465; color:#f7f7f7;
+   text-align: center;
+
+ }
+ table, th, td 
+ {
+     padding: 10px;
+     border: 1px solid black;
+     
+ }
+ 
